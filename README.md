@@ -1,6 +1,6 @@
-**#Multi Web PHP Deployment with Docker + Nginx + DNS**
+#Multi Web PHP Deployment with Docker + Nginx + DNS**
 
-**#Giới thiệu**
+#Giới thiệu**
 Dự án này triển khai nhiều website PHP (web1, web2) trên môi trường Docker, sử dụng:
 - 🐳 Docker & Docker Compose
 - 🌐 Nginx (reverse proxy)
@@ -22,8 +22,10 @@ Nginx
 web1 web2
 ↓ ↓
 MySQL Database
-**---**
-####**Cấu trúc project**
+---
+
+##**Cấu trúc project**
+
 projects/
 │
 ├── docker-compose.yml
@@ -47,24 +49,24 @@ projects/
 - Docker
 - Docker Compose
 ---
-**## Cài đặt và chạy**
-## 🚀 Cài đặt và chạy
 
-### 1. Clone project
+##Cài đặt và chạy
+
+## 1. Clone project
 ```bash
 git clone git@github.com:Cndinh3124/Mystore.git
 cd Mystore
 
-2. Fix DNS port (Ubuntu)
+##2. Fix DNS port (Ubuntu)
 sudo systemctl stop systemd-resolved
 sudo systemctl disable systemd-resolved
 sudo rm /etc/resolv.conf
 echo "nameserver 8.8.8.8" | sudo tee /etc/resolv.conf
 
-3. Chạy hệ thống
+##3. Chạy hệ thống
 docker-compose up -d --build
 
-4. Kiểm tra DNS
+##4. Kiểm tra DNS
 nslookup web1.local 127.0.0.1
 
 Cấu hình host (Ubuntu): nano /etc/hosts
