@@ -1,18 +1,18 @@
-# 🐳 Docker Multi-Website System (Nginx + MySQL + DNS)
+#  Docker Multi-Website System (Nginx + MySQL + DNS)
 
-## 📌 Overview
+##  Overview
 
 This project demonstrates deploying multiple web applications on a single server using Docker and Docker Compose, with Nginx as a reverse proxy and DNS-based routing.
 
 ---
 
-## 🧱 Architecture
+##  Architecture
 
 Client → Nginx (Reverse Proxy) → Web1 / Web2 → MySQL
 
 ---
 
-## ⚙️ Key Features
+##  Key Features
 
 * Multi-website deployment (web1, web2)
 * Nginx reverse proxy for traffic routing
@@ -22,7 +22,7 @@ Client → Nginx (Reverse Proxy) → Web1 / Web2 → MySQL
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 Mystore/
@@ -42,7 +42,7 @@ Mystore/
 
 ---
 
-## ⚙️ Requirements
+##  Requirements
 
 * Ubuntu (VM or physical machine)
 * Docker
@@ -50,7 +50,7 @@ Mystore/
 
 ---
 
-## 🚀 Deployment
+##  Deployment
 
 ### 1. Clone project
 
@@ -88,7 +88,7 @@ nslookup web1.ncdinh 127.0.0.1
 
 ---
 
-## 🌐 Client Configuration
+##  Client Configuration
 
 Edit `/etc/hosts`:
 
@@ -106,7 +106,7 @@ Edit `/etc/hosts`:
 
 ---
 
-## 🧠 System Flow
+##  System Flow
 
 * Nginx acts as a reverse proxy
 * Domain-based routing:
@@ -117,9 +117,9 @@ Edit `/etc/hosts`:
 
 ---
 
-## 🐞 Troubleshooting
+##  Troubleshooting
 
-### ❌ Cannot connect to MySQL
+###  Cannot connect to MySQL
 
 * Check hostname:
 
@@ -127,17 +127,17 @@ Edit `/etc/hosts`:
 $host = "mysql";
 ```
 
-### ❌ Domain not accessible
+###  Domain not accessible
 
 * Check `/etc/hosts` configuration
 
-### ❌ CSS not loading
+###  CSS not loading
 
 * Check volume mount and file paths
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 * Docker
 * Docker Compose
@@ -147,7 +147,7 @@ $host = "mysql";
 
 ---
 
-## 🎯 Key Learning
+##  Key Learning
 
 * Multi-container system design
 * Reverse proxy architecture
@@ -156,7 +156,7 @@ $host = "mysql";
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 Cong Dinh Nguyen
 
