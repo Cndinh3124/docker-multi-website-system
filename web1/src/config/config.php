@@ -11,7 +11,7 @@ define("DB_NAME", $configDB["database"]);
 define("DB_USER", $configDB["username"]);
 define("DB_PASS", $configDB["password"]);
 
-define("BASE_URL", getenv('BASE_URL') ? getenv('BASE_URL') : 'http://web1.local');
+define("BASE_URL", getenv('BASE_URL') ? getenv('BASE_URL') : 'http://web1.ncdinh');
 // Define ROOT so other includes can use absolute paths (points to src folder)
 if (!defined('ROOT')) {
 	define('ROOT', dirname(__DIR__));
